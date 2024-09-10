@@ -8,15 +8,47 @@
   <title>Frontend Mentor | Single-page developer portfolio</title>
 </head>
 <body>
+  <header class="header">
+    <h2 class="visually-hidden">Header</h2>
+    <div class="wrapper">
+      <nav class="header__nav">
+        <h2 class="visually-hidden">Navigation</h2>
+        <a href="/" class="header__home">adamkeyes
+          <span class="visually-hidden">(to home page)</span>
+        </a>
+        <a href="#github" class="header__social"><img src="./assets/images/icon-github.svg" alt="github image"></a>
+        <a href="#frontend-mentor" class="header__social"><img src="./assets/images/icon-frontend-mentor.svg" alt="frontend mentor image"></a>
+        <a href="#linkedin" class="header__social"><img src="./assets/images/icon-linkedin.svg" alt="linkedin image"></a>
+        <a href="#twitter" class="header__social"><img src="./assets/images/icon-twitter.svg" alt="twitter image"></a>
+      </nav>
+    </div>
+  </header>
 
-  adamkeyes
+  <main id="main">
+    <section class="hero">
+      <div class="wrapper hero__wrapper bottom-border">
+        <div class="hero__content">
+          <picture>
+            <source media="(min-width: 62.5em)" srcset="./assets/images/image-profile-desktop.webp">
+            <source media="(min-width: 37.5em)" srcset="./assets/images/image-profile-tablet.webp">
+            <img src="./assets/images/image-profile-mobile.webp" alt="adam keyes picture" class="hero__image" width="174" height="383">
+          </picture>
+          <img src="./assets/images/pattern-rings.svg" alt="rings pattern" class="hero__rings" width="530" height="129">
+          <img src="./assets/images/pattern-circle.svg" alt="circle pattern" class="hero__circle" width="129" height="129">
+          <div class="hero__text">
+            <h1 class="hero__headline header-xl">Nice to <br>meet you! I'm <span>Adam Keyes.</span></h1>
+            <p class="hero__description">Based in the UK, I'm a front-end developer 
+              passionate about building accessible web apps that users love.</p>
+              <a href="#contact" class="hero__contact underline">Contact me</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  Nice to meet you! I'm Adam Keyes.
+    
+  </main>
 
-  Based in the UK, I'm a front-end developer passionate about 
-  building accessible web apps that users love.
-
-  Contact me
+  
 
   HTML
   4 Years Experience
