@@ -633,12 +633,125 @@ h1 > span {
 }
 
 /* CONTACT */
+.contact {
+    position: relative;
+}
 
+.contact__wrapper {
+    padding-block: 5.25rem;
+}
 
+.contact__headline {
+    margin-block-end: var(--fs-20);
+}
 
+.contact__control {
+    position: relative;
+    margin-block-end: 1rem;
+}
 
+.contact__control input,
+.contact__control textarea {
+    width: 100%;
+    padding-block: 1rem;
+    padding-inline: 1.25rem;
+    border: none;
+    border-bottom: .0625rem solid var(--text1);
+    background: transparent;
+    font-size: 1rem;
+    line-height: 1.625;
+    color: var(--text1);
+}
 
+.contact__control > *::placeholder {
+    color: var(--text2);
+    opacity: 0.5;
+    text-transform: uppercase;
+}
 
+.contact__control textarea {
+    margin-block-end: 2rem;
+}
 
+.contact__control.align-right {
+    display: flex;
+    justify-content: flex-end;
+}
 
+.contact__control button {
+    background-color: transparent;
+    border: none;
+}
+
+.contact__invalid-icon {
+    display: none;
+    width: var(--fs-24);
+    height: var(--fs-24);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    translate: -50% -50%;
+}
+
+.contact input:focus-visible:invalid ~ .contact__invalid-icon,
+.contact textarea:focus-visible:invalid ~ .contact__invalid-icon {
+    display: inline-block;
+}
+
+.contact textarea:focus-visible:invalid ~ .contact__invalid-icon {
+    top: 1.2rem;
+    right: 1.5rem;
+    translate: none;
+}
+
+.contact__rings {
+    position: absolute;
+    left: 0;
+    bottom: 6.0625rem;
+    translate: -75%;
+}
+
+@media (min-width: 37.5em) {
+    .contact__rings {
+        bottom: 2.9375rem;
+        translate: -75%;
+    }
+}
+
+@media (min-width: 62.5em) {
+    .contact__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 27.8rem);
+        justify-content: space-between;
+    }
+    
+    .contact__headline {
+        margin-block-end: var(--fs-30);
+    }
+
+    .contact__rings {
+        translate: -40%;
+    }
+}
+
+/* 999.98px */
+@media (max-width: 62.49875em) {
+    .contact__wrapper {
+        max-width: 27.8rem;
+    }
+
+    .contact__text {
+        text-align: center;
+    }
+}
+
+footer {
+    padding-block: 2.5rem 3.75rem;
+}
+
+@media (min-width: 37.5em) {
+    footer {
+        padding-block: 1.875rem 2.5rem;
+    }
+}
 
